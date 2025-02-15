@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90418475-2"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-90418475-2");
+  </script>
+
+
+<script src="/js/pace/pace.js"></script>
+<link href="/js/pace/themes/blue/pace-theme-minimal.css" rel="stylesheet" />
+
+<meta charset="utf-8" />
+
+<title>WebIntoApp | Login</title>
+<meta name="description" content="Login to your Author Area." />
+<meta name="keywords" content="webintoapp.com, login." />
+<meta http-equiv="content-language" content="en" />
+<meta name="author" content="webintoapp.com" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="csrf-token" content="UQMHlPt3kWERUQ3JPS93V0oIAFM9y4oyS43JISmc" />
+
+<link rel="preload" href="/static/css/font-awesome.min.css?v=1.0" as="style" onload="this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="/static/css/font-awesome.min.css?v=1.0" /></noscript>
+
+<link rel="preload" href="/static/css/simple-line-icons.min.css?v=1.0" as="style" onload="this.rel='stylesheet'" />
+<noscript><link rel="stylesheet" href="/static/css/simple-line-icons.min.css?v=1.0" /></noscript>
+
+
+<title>webintoapp.com</title>
+
+<script src="/js/langs/en.min.js"></script>
+
+<link href="/css/app.css?v=2.4.2" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/style.min.css?v=2.3.0" />
+<link rel="preload" href="/css/style.min.css?v=2.5.0" as="style" onload="this.rel='stylesheet'">
+
+
+<link rel="icon" type="image/x-icon" href="https://www.webintoapp.com/favicon.ico?v=1.0" />
+<link rel="icon" type="image/png" sizes="192x192" href="https://www.webintoapp.com/favicons/favicon-192x192.png?v=1.0" />
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.webintoapp.com/favicons/favicon-32x32.png?v=1.0" />
+<link rel="icon" type="image/png" sizes="96x96" href="https://www.webintoapp.com/favicons/favicon-96x96.png?v=1.0" />
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.webintoapp.com/favicons/favicon-16x16.png?v=1.0" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src="/static/libs/Chart.min.js"></script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<script src="https://www.paypal.com/sdk/js?client-id=AaEE1m7EQW6iF7mryYSiiPnAmW-g-D8tSkIAMuerGCv59gE6RtVL3yr-t_WhSLbXcFxzZpmdbaBm4LHe&vault=true&commit=false"></script>
+
+<link href="/css/themes/Primary.css?v=1.0" id="stylesheet-theme" rel="stylesheet" />
+
+
+</head>
+<body id="main">
+
+    <div id="app">
+
+        <header id="header" class="fixed-top">
+    <div class="container d-flex">
+        <div class="logo mr-auto row w-100 d-lg-none">
+            <div class="" style="padding-left: 16px;">
+                <a href="#" class="text-primary" style="font-size: 2em;" onclick="window.history.go(-1); return false;">
+                    <i class="icon-arrow-left-circle"></i>
+                </a>
+            </div>
+
+            <div class="col">
+                <h4 class="pt-2 text-center pr-4">
+                    <a href="/author/dashboard"> <b>WEB</b>INTO<b>APP</b> </a>
+                </h4>
+            </div>
+        </div>
+
+        <div class="logo mr-auto d-none d-lg-block">
+            <h4 class="pt-2">
+                <a href="/author/dashboard">
+                    <div class="d-inline text-success pr-0"><b>&lt;</b></div>
+                    <b>WEB</b>INTO<b>APP</b>
+                    <div class="d-inline text-success pl-0"><b>&gt;</b></div>
+                </a>
+            </h4>
+        </div>
+
+        
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li><a class="menu-item d-none d-lg-block" href="/" style="color: #343a40;" title="Goto Homepage">Home</a></li>
+
+                <li><a id="appmakermenu" name="appmakermenu" class="menu-item text-dark d-none" href="#appmaker">+App Maker</a></li>
+
+                <li>
+                    <a class="menu-item text-primary d-none d-lg-block" href="/app-maker" title="Create New Free / Dedicated App"><b>+NEW</b></a>
+                </li>
+
+                <li><a class="menu-item d-none d-lg-block" href="/benefits" style="color: #343a40;" title="Benefits">Benefits</a></li>
+                <li><a class="menu-item d-none d-lg-block" href="/plans" style="color: #343a40;" title="Plans">Plans</a></li>
+
+                <li class="drop-down d-none d-lg-block">
+                    <a class="menu-item" href="#" style="color: #343a40;" title="Solutions">Solutions<i class="fa fa-caret-down pl-2"></i></a>
+                    <ul>
+                        <li><a class="menu-item text-dark" href="/wordpress-to-app" style="color: ;">WordPress To App</a></li>
+                        <li><a class="menu-item text-dark" href="/ecommerce-app-maker" style="color: ;">ECommerce App Maker</a></li>
+                        <li><a class="menu-item text-dark" href="/wix-to-app" style="color: ;">WIX To App</a></li>
+                        <li><a class="menu-item text-dark" href="/website-to-apk" style="color: ;">Website To APK</a></li>
+                        <li><a class="menu-item text-dark" href="/html-to-app" style="color: ;">HTML To App</a></li>
+                        <li><a class="menu-item text-dark" href="/webview-maker" style="color: ;">Webview App maker</a></li>
+                    </ul>
+                </li>
+
+                <li class="drop-down">
+                    <a class="menu-item font-weight-bold" href="#" style="color: #343a40;" title="Author Area">Author<i class="fa fa-caret-down pl-2"></i></a>
+                    <ul>
+                        <li>
+                            <a class="menu-item text-dark" href="/login" style="color: ;"><i class="icon-star" style="padding-right: 4px;"></i> Login</a>
+                        </li>
+                        <li>
+                            <a class="menu-item text-dark" href="/register" style="color: ;"><i class="icon-note" style="padding-right: 4px;"></i> Register</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- .nav-menu -->
+
+        
+        <div class="header-social-links pt-1 d-none d-md-block d-lg-block d-xl-block">
+            <a href="https://twitter.com/webintoapp" target="_blank" class="twitter text-success"><i class="icofont-twitter"></i></a>
+            <a href="https://www.facebook.com/WebToAppOnline" target="_blank" class="facebook text-primary"><i class="icofont-facebook"></i></a>
+            <a href="https://www.instagram.com/webintoapp/" target="_blank" class="instagram"><i class="text-warning icofont-instagram"></i></a>
+            <a href="https://www.pinterest.com/webtoapp/" target="_blank"><i class="icofont-pinterest text-danger"></i></a>
+        </div>
+    </div>
+</header>
+
+        <main class="py-4">
+
+            
+<section>
+    <div class="container pt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+
+
+                    <div class="card-body">
+
+                        <div class="h5 font-weight-bold"><span aria-hidden="true" class="icon-star" style="padding-left: 0px; padding-right: 10px;"></span>Login</div>
+                        
+                        <hr>
+
+
+                        <form method="POST" action="https://www.webintoapp.com/login">
+                            <input type="hidden" name="_token" value="UQMHlPt3kWERUQ3JPS93V0oIAFM9y4oyS43JISmc" autocomplete="off">
+                            <div class="form-group row">
+                                <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control" name="email" value="" required autofocus>
+
+                                                                    </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="passwordX" class="col-md-4 col-form-label text-md-right">Password</label>
+
+                                <div class="col-md-6">
+                                    <input id="passwordX" type="password" class="form-control" name="password" required autocomplete="on">
+
+                                                                    </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-md-6 offset-md-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="remember" id="remember"  checked>
+
+                                        <label class="form-check-label" for="remember">
+                                            Remember Me
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row mb-0">
+                                <div class="col-md-8 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        Login
+                                    </button>
+
+                                                                        <!--
+                                        <a class="btn btn-link" href="https://www.webintoapp.com/password/reset">
+                                            Forgot Your Password?
+                                        </a>
+                                    -->
+                                                                    </div>
+                            </div>
+
+
+                            <div class="form-group row mb-0">
+                                <div class="col-md-6 offset-md-4">
+                                    <hr>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group row">
+                                <div class="col-md-4">
+                                    
+                                </div>
+
+                                <div class="col-md-6">
+                                    <b>Don't have an account yet?</b>
+                                    <br>
+                                    <a class="text-primary" href="/register"><b>Click here to open a new one for FREE</b></a>
+                                </div>
+
+                            </div>
+
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        </main>
+    </div>
+
+    <div class="">
+
+        <!-- ======= Footer ======= -->
+<footer id="footer" class="d-none d-lg-block">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 d-none">
+                    <div class="footer-info">
+                        <h3>WebIntoApp</h3>
+                        <p>
+                            Turn your Website / HTML files <br />
+                            into a Mobile App for Android <br />
+                            and iOS.<br />
+                            <br />
+                            Version: <b>2.1</b> (oz).<br />
+                            <br />
+                        </p>
+                        <div class="social-links mt-3">
+                            <a href="https://twitter.com/webintoapp" target="_blank" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="https://www.facebook.com/WebToAppOnline" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="https://www.instagram.com/webintoapp/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="https://www.pinterest.com/webtoapp/" target="_blank" class="pinterest"><i class="bx bxl-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <div class="h4 pb-2"><i class="icons icon-home"></i> Home</div>
+                    <ul class="pl-2">
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/" title="Home">Home</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/benefits" title="Benefits">Benefits</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/plans" title="Plans">Plans</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/guides" title="Guides">Guides</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/login" title="Login">Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <div class="h4 pb-2"><i class="icons icon-grid"></i> Author</div>
+                    <ul class="pl-2">
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/author/dashboard" title="Dashboard">Dashboard</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/author/apps/create" title="App Maker">App Maker</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/author/apps" title="Apps">Apps</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/author/settings" title="Installs Statistics">Installs Statistics</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/author/settings" title="Latest Installs">Latest Installs</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/author/settings" title="Settings">Settings</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a href="/author/support" title="Support">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <div class="h4 pb-2"><i class="icons icon-check"></i> Solutions</div>
+                    <ul class="pl-2">
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a class="menu_dashboard" href="/wordpress-to-app" style="color: ;">WordPress To App</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a class="menu_dashboard" href="/ecommerce-app-maker" style="color: ;">ECommerce App Maker</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a class="menu_dashboard" href="/wix-to-app" style="color: ;">WIX To App</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a class="menu_dashboard" href="/website-to-apk" style="color: ;">Website To APK</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a class="menu_dashboard" href="/html-to-app" style="color: ;">HTML To App</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a class="menu_dashboard" href="/webview-maker" style="color: ;">Webview App maker</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-5 col-md-6 footer-links">
+                    <div class="h4 pb-2"><i class="icons icon-book-open"></i> Guides</div>
+                    <ul class="pl-2">
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a class="text-success" href="/guides/turn-website-to-app" title="Turn your website / html files into a dedicated App">Turn your website / html files into a dedicated App</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a class="text-success" href="/guides/add-firebase-to-your-app" title="Add Firebase capability to your App"> Add Firebase capability to your App</a></li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a class="text-success" href="/guides/add-admob-to-your-app" title="Add AdMob banner to your App">Add AdMob banner to your App</a></li>
+
+                        <li>
+                            <i class="fa fa-caret-right pr-2 text-dark"></i>
+                            <a class="text-success" href="/guides/using-the-source-code-of-your-android-app" title="Using the source code of your Android App">Using the source code of your Android App</a>
+                        </li>
+                        <li><i class="fa fa-caret-right pr-2 text-dark"></i> <a class="text-success" href="/guides/run-your-ios-app" title="Run your iOS App">Run your iOS App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <div class="text-center">
+            <div class="social-links h3">
+                <a href="https://twitter.com/webintoapp" target="_blank" class="twitter" rel="noreferrer noopener" title="twitter"><i style="font-size: 3em;" class="fa fa-twitter pl-4" alt="twitter"></i></a>
+                <a href="https://www.facebook.com/WebToAppOnline" target="_blank" class="facebook" rel="noreferrer noopener" title="twitter"><i style="font-size: 3em;" class="fa fa-facebook pl-4" alt="facebook"></i></a>
+                <a href="https://www.instagram.com/webintoapp/" target="_blank" class="instagram" rel="noreferrer noopener" title="instagram"><i style="font-size: 3em;" class="fa fa-instagram pl-4" alt="instagram"></i></a>
+                <a href="https://www.pinterest.com/webtoapp/" target="_blank" class="pinterest" rel="noreferrer noopener" title="pinterest"><i style="font-size: 3em;" class="fa fa-pinterest pl-4" alt="pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container pt-5">
+        <div class="col-lg-12">
+            <div class="footer-info">
+                <div class="h3"><a href="/">webintoapp.com</a></div>
+                <p></p>
+                <div class="">Turn Your Website / HTML Files Into A Dedicated App.</div>
+                @<a class="text-primary nounderline" href="https://www.webintoapp.com">webintoapp.com</a> | V.2.1 [TANTUN] | <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABblBMVEUAAABbHh9BU1dhXV6tAAB7iIvIAwB1goNhc3dCSUrVFAC3AADzFQB1eXzNVSTjEQB3kpTDFQDUFADJSS33OgTPHACmAwBnamyUb1bJCAC+AwCxAgBWbnfBEgD2RgzuOQi7DwBqSU/JKgBmWVZhY2VaZWZySEhpc3R4RUSwHBKdRDLTXDK4BwDJBwCDhIRUcHNgaGp3eXnwURTUBwBtgIRxe36mJB9nfoSTCABKUVJfcnP/QABedXmFamWJQjVmERF8kJJlaGhbYmT0QAZVQ0ByenvsGwBra2vCCgCDi4zCAACEhIRmdXdmaGhcVFVPWlxfYGDIDACpAABcEhZ/f3//MwBUVFRQNDZ4Uktse4DpAgCRAADJAAB0dnZhaGlkZ2j/GABTX1/QCQCnAAAbLS9QUlMlLS7vAAD+VRL/YRH/UQpmZWpXXF2CaFa+bjvndC/AWi//kiv+ZhjbVxjuUAz/Rwu6GAr/VAj/PAD/OABtz/lPAAAAaHRSTlMAA/XBm25uYl1VJhMM/v7+/f39+/r6+Pf39vPx7+/u7u3s7Ovp5ePg2tjX1tbV1NTT0dHR0MvKxMTDv7e1srCwr6+spaSioqCempSTkY6OjIuKgoB4cnFxbmlnYlhTRkMxKx8bGA4NBhFic5wAAAC+SURBVBjTY8ACuNKBRKgcG5DkAfGdi4xZPc2ZSphcI60zAoEC8sXZ4i5KomLBlry5mbJAATZJexvhwswyAUN/C34WkB4HTga3rEqpFAaGOGawod5hDFw60opAVqwjWCAkgIGBXVkiCki6gwU4nBhSfXPK1RIZWH1AfEYjPjNVZhWvcANbbS1ukGNECjTS4tWBMnb5FdEgJTEsVqYRMkkceiaauskQxzP6ZeQJ6nMieSehNEuIG8WDHgpBDDgAAFSXHmDH5SCJAAAAAElFTkSuQmCC" alt="WISERBIT" width="16" height="16" /> A WISERBIT
+                PRODUCT |
+                <a href="/help/terms" title="Terms and Conditions">Terms and Conditions</a>
+                |
+                <a href="/help/credits" title="Credits">Credits</a>
+                |
+                <a href="/help/privacy" title="Privacy Policy">Privacy Policy</a>
+                |
+                <a href="/author/support" class="nounderline"><i class="fa fa-envelope-o"></i> Support</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+        
+    </div>
+
+  <script type="text/javascript">
+    
+    window.addEventListener('load', (event) => {
+
+        if(window.location.pathname == "/author/dashboard")
+          document.getElementById('menu_dashboard').className = "font-weight-bold text-primary";
+
+        if( (window.location.pathname == "/author/apps/create") || (window.location.pathname.includes("/edit")) )
+          document.getElementById('menu_maker').className = "font-weight-bold text-primary";
+
+        if(window.location.pathname == "/author/apps")
+          document.getElementById('menu_apps').className = "font-weight-bold text-primary";
+
+        if(window.location.pathname == "/author/stats")
+          document.getElementById('menu_installs').className = "font-weight-bold text-primary";
+
+        if(window.location.pathname == "/author/settings")
+          document.getElementById('menu_settings').className = "font-weight-bold text-primary";
+
+    });  
+
+  </script>
+
+  <script src="/assets/vendor/jquery/jquery.min.js"></script>
+  <script async="" src="/assets/vendor/jquery.easing/jquery.easing.min.js" defer="jquery.min.js"></script>  
+  <script async src="/js/app.js?v=2.5.2.5" defer></script>
+  <script async="" src="/assets/js/main.min.js?v=2.5.1" defer="jquery.min.js"></script>
+
+</body>
+
+</html>

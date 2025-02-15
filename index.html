@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudBud - AI Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Step 1: Home Page -->
+    <div class="container" id="homePage">
+        <h1>StudBud - AI Study Planner</h1>
+        <label>Enter Name:</label>
+        <input type="text" id="userName">
+        <label>Select Study:</label>
+        <select id="studyType">
+            <option>Academic</option>
+            <option>Craft-Based Learning</option>
+        </select>
+        <button onclick="nextStep('studyPlan')">Start</button>
+    </div>
+
+    <!-- Step 2: AI Study Plan Generator -->
+    <div class="container" id="studyPlan">
+        <h2>AI Study Plan Generator</h2>
+        <label>Time Per Day:</label>
+        <input type="number" id="studyTime">
+        <label>Weak Subjects/Craft Areas:</label>
+        <input type="text" id="weakAreas">
+        <button onclick="generatePlan()">Generate Plan</button>
+        <div id="generatedPlan"></div>
+        <button onclick="nextStep('progressTracker')">Next</button>
+    </div>
+
+    <!-- Step 3: Progress Tracker -->
+    <div class="container" id="progressTracker">
+        <h2>Progress Tracker</h2>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill">0%</div>
+        </div>
+        <p>Study Streak: <span id="streakCount">0</span> Days</p>
+        <button onclick="updateProgress()">Update Progress</button>
+        <button onclick="nextStep('studyRecommendations')">Next</button>
+    </div>
+
+    <!-- Step 4: Study Recommendations -->
+    <div class="container" id="studyRecommendations">
+        <h2>Study Recommendations</h2>
+        <p id="studyTip">Click to get AI study suggestions!</p>
+        <button onclick="generateTip()">Get Tip</button>
+        <button onclick="nextStep('groupStudy')">Next</button>
+    </div>
+
+    <!-- Step 5: Group Study & Chatbot -->
+    <div class="container" id="groupStudy">
+        <h2>Group Study & Chatbot</h2>
+        <input type="checkbox" id="joinGroup"> Join Study Groups
+        <button onclick="chatWithAI()">Chat with AI Tutor</button>
+        <p id="chatResponse"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
